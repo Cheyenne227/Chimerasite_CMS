@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Login</title>
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-        <link href="css/main.css" rel="stylesheet" type="text/css">
-	</head>
-	<body>
+	<?php
+		include 'head.php';
+	?>
+	<body>	
+		<!-- navbar -->
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#"><img src="css/images/logo_white.png" alt="Logo" style="width:25px; margin-top:-5px;"> Stargazer</a>							
+			</div>
+		</nav>
+
+		<!-- main content -->
 		<div>
 			<h1>Welcome to Stargazer</h1>
 		</div>
@@ -20,7 +25,7 @@
 					<i class="fas fa-lock"></i>
 				</label>
 				<input type="password" name="password" placeholder="Password" id="password" required>
-				<a href="register.html">Register</a>
+				<a href="register.php">Register</a>
 				<input type="submit" value="Login">
 			</form>
 		</div>

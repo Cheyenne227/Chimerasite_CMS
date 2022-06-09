@@ -43,40 +43,26 @@ $stmt->close();
 						<a class="nav-link" href="dashboard.php">Dashboard</a>
 						</li>
 						<li class="nav-item">
-						<a class="nav-link" href="manage.php">Manage</a>
+						<a class="nav-link active" href="manage.php">Manage</a>
 						</li>
 						<li class="nav-item">
-						<a class="nav-link active" href="profile.php">Profile</a>
+						<a class="nav-link" href="profile.php">Profile</a>
 						</li>
 						<li class="nav-item">
 						<a class="nav-link" href="help.php">Help</a>
 						</li>
 					</ul>
 				</div>
-				<a href="logout.php" style="width:112.78px; text-align:right;"><i class="fas fa-sign-out-alt"></i></a>				
+				<a href="logout.php" style="width:112.78px; text-align:right;"><i class="fas fa-sign-out-alt"></i></a>					
 			</div>
 		</nav>
 
 		<!-- main content -->
 		<div class="content">
-			<h2>Profile</h2>
+			<h2>Manage</h2>
 			<div>
-				<p>Your account details are below:</p>
-				<table>
-					<tr>
-						<td>Username:</td>
-						<td><?=$_SESSION['name']?></td>
-					</tr>
-					<tr>
-						<td>Password:</td>
-						<td><?=$password?></td>
-					</tr>
-					<tr>
-						<td>Email:</td>
-						<td><?=$email?></td>
-					</tr>
-				</table>
-			</div>
+
+            </div>
 		</div>
 	</body>
 </html>
