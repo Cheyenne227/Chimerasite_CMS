@@ -117,6 +117,57 @@ h1
 	color: $maincolor;
 }
 
+.content h3 {
+	margin: 0;
+	padding: 0 0 25px 0;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	color: $maincolor;
+}
+
+/*manage*/
+.manage_select
+{
+	width: 50%;
+	margin: 0 auto;
+}
+
+.manage_select select
+{
+	width: 100%;
+	border: 2px solid $maincolor;
+	padding: 10px;
+	color: $maincolor;
+	background-color: $text;
+}
+
+.manage_select select:active, .manage_select select:focus, .manage_select select:hover
+{
+	width: 100%;
+	border: 2px solid $maincolor;
+	padding: 10px;
+	color: $maincolor;
+	background-color: $text;
+	border-radius: 0;
+	outline:none;
+}
+
+.manage_select div
+{
+	margin: 40px 25% 0;
+}
+
+.manage_select #manageGo
+{
+	width:100%;
+	background-color: $accentcolor;
+	color: $text;
+	border: 0 solid;
+	padding: 10px;
+	text-align: center;
+}
+
 /*help*/
 .form-help
 {

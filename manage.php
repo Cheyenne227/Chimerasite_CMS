@@ -60,9 +60,21 @@ $stmt->close();
 		<!-- main content -->
 		<div class="content">
 			<h2>Manage</h2>
-			<div>
-
+			<div class="manage_select">
+				<select name="website" id="website">
+					<option value="dummy_website">Dummy Website</option>
+				</select>
+				<br>
+				<select name="task" id="task" style="margin-top:20px;">
+					<option value="upload_image">Upload Image</option>
+					<option value="delete_image">Delete Image</option>
+				</select>
+				<br>
+				<div>
+					<button id="manageGo">Go</button>
+				</div>					
             </div>
 		</div>
 	</body>
+	<script src="js/manage.js"></script>
 </html>
