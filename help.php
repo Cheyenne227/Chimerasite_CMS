@@ -57,12 +57,41 @@ $stmt->close();
 			</div>
 		</nav>
 
+        <?php
+            if(isset($_POST['submit'])) 
+            {
+                $to = "chimerasite22@gmail.com"; // this is your Email address
+                $from = $_POST['name']; // this is the sender's "email"
+                $name = $_POST['name'];
+                $email = $_POST['email'];
+                $subject ="Help form stargazer";	
+                $message = "name:" . $name . "; email: " . $email . "; wrote the following:" . "\n\n" . $_POST['message'];		
+
+                $headers = "From:" . $from;
+                $result = mail($to,$subject,$message,$headers);
+
+                $succesMessage = "<h3 style='text-align: center; margin-top: 4%; position: relative; display: inline;'> Form submitted succesfully </h3><br><hr>";
+            }
+        ?> 
 		<!-- main content -->
 		<div class="content">
 			<h2>Help</h2>
-			<div>
-				
+			<div class="form-help">
+                <form id="help-form" data-parsley-validate="" class="form" action="" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" name="name" required="">
+
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" name="email" data-parsley-trigger="change" required="">
+
+                    <p>
+                    <label for="message">Message:</label>
+                    <textarea id="message" class="form-control" name="message" data-parsley-trigger="keyup" data-parsley-validation-threshold="15"></textarea>
+                    </p>
+                    <input type="submit" class="submit-btn" value="Send">
+                </form>
 			</div>
 		</div>
 	</body>
 </html>
+

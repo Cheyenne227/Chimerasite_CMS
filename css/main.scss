@@ -1,0 +1,151 @@
+@import "root";
+
+* {
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin:0;
+	padding:0;
+}
+body {
+	background-color: $text;
+}
+
+/* Titles */
+h1 
+{
+	text-align: center;
+	font-size: 50px;
+}
+
+/* login and register form styling */
+.log-reg 
+{
+	width: 400px;
+	margin: 100px auto;
+}
+.log-reg form 
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-top: 20px;
+}
+.log-reg form label 
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	background-color: $text;
+	color: $maincolor;
+	border: 1px solid $maincolor;
+	border-right: 0px;
+}
+.log-reg form input[type="password"], .log-reg form input[type="text"], .log-reg form input[type="email"] 
+{
+	width: 350px;
+	height: 50px;
+	background-color: $text;
+	border: 1px solid $maincolor;
+	border-left: 0px;
+	margin-bottom: 20px;
+	padding: 0 15px;
+	outline: 0;
+}
+.log-reg form input[type="submit"] 
+{
+	width: 100%;
+	padding: 15px;
+   margin-top: 20px;
+	background-color: $accentcolor;
+	border: 0;
+	cursor: pointer;
+	font-weight: bold;
+	color: $text;
+	transition: background-color 0.2s;
+}
+.log-reg form a
+{
+	padding-left: 350px;
+}
+
+.navbar 
+{
+	background-color: $maincolor !important;
+	color: $text;
+}
+
+.navbar i
+{
+	color: $text;
+}
+
+.navbar-dark .navbar-nav .nav-link
+{
+	color: $text;
+	opacity: 50%;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover
+{
+	color:$accentcolor;
+	opacity: 100%;
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link
+{
+	color: $text;
+	opacity: 100%;
+	border-bottom: 2px solid $text;
+}
+
+.content {
+	width: 1000px;
+	margin: 0 auto;
+	
+}
+.content h2 {
+	margin: 0;
+	padding: 75px 0 25px 0;
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	color: $maincolor;
+}
+
+/*help*/
+.form-help
+{
+	width: 75%;
+	margin:0 auto;
+}
+
+.form-help input, .form-help textarea
+{
+	background-color: $text;
+	border: 2px solid $maincolor;
+	border-radius: 0;
+	outline: 0;
+}
+
+.form-help .submit-btn
+{
+	width:100%;
+	background-color: $accentcolor;
+	color: $text;
+	border: 0 solid;
+	padding: 10px;
+}
+
+.form-control:focus
+{
+    color: $maincolor;
+    background-color: $text;
+    border-color: $maincolor;
+    outline: 0;
+    box-shadow: 0;
+}
