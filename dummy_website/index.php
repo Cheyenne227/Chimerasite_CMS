@@ -38,7 +38,12 @@
                                 <div class="card card-sizing">
                                     <div class="card-sizing">
                                         <img src="<?= $row['image']; ?>" class="card-img-top img-sizing">
-                                        <p> <?= $row['description']; ?> </p>
+                                        <p>
+										Title: <?= $row['title']; ?><br>
+										Filter: <?= $row['filter']; ?> <br>
+										Date: <?= $row['date']; ?> <br>
+										Description: <?= $row['description']; ?> 
+										</p>
                                     </div>
                                 </div>
                             </div>
