@@ -1,11 +1,28 @@
 <?php
 // We need to use sessions, so you should always start sessions using the below code.
+// We need to use sessions, so you should always start sessions using the below code.
 session_start();
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
 	header('Location: index.php');
 	exit;
 }
+$DATABASE_HOST = 'localhost';
+$DATABASE_USER = 'root';
+$DATABASE_PASS = '';
+$DATABASE_NAME = 'chimerasite_cms';
+$conn = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+if (mysqli_connect_errno()) {
+	exit('Failed to connect to MySQL: ' . mysqli_connect_error());
+}
+// We don't have the password or email info stored in sessions so instead we can get the results from the database.
+$stmt = $conn->prepare('SELECT password, email FROM accounts WHERE id = ?');
+// In this case we can use the account ID to get the account info.
+$stmt->bind_param('i', $_SESSION['id']);
+$stmt->execute();
+$stmt->bind_result($password, $email);
+$stmt->fetch();
+$stmt->close();
 ?>
 
 <!DOCTYPE html>
@@ -42,10 +59,9 @@ if (!isset($_SESSION['loggedin'])) {
 		</nav>
 
 		<!-- main content -->
-		<div class="content container">
+		<div class="content container-fluid">
 			<h2>Dashboard</h2>
-			<div>
-				<p>Welcome back, <?=$_SESSION['name']?>!</p>
+			<div class="container d-flex justify-content-around">
 				<div id="calender">
 					<div class="calendar">
 						<div class="calendar-header">
@@ -71,6 +87,22 @@ if (!isset($_SESSION['loggedin'])) {
 					</div>
 
 					<script src="js/callender.js"></script>
+				</div>
+				<div id="slider">
+					<div id="result">
+						<?php
+							$sql="SELECT * FROM dummy_website WHERE id=(SELECT max(id) FROM dummy_website)";
+							$result=$conn->query($sql);
+							while($row=$result->fetch_assoc())
+							{
+						?>
+								<div>
+									<img src="<?= $row['image']; ?>">	
+								</div>
+						<?php
+							}
+						?>
+					</div>
 				</div>
 			</div>
 		</div>

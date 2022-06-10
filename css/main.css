@@ -124,7 +124,7 @@ h1 {
 }
 
 .content {
-  width: 1000px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -246,6 +246,10 @@ h1 {
 
 .calendar-days div.curr-date span {
   display: none;
+}
+
+#slider {
+  width: 60%;
 }
 
 /*manage*/
