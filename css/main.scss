@@ -13,6 +13,7 @@ body {
 	background-color: $text;
 }
 
+
 /* Titles */
 h1 
 {
@@ -230,4 +231,21 @@ h1
     border-color: $maincolor;
     outline: 0;
     box-shadow: 0;
+}
+
+/*footer*/
+.footer
+{
+	background-color: $maincolor;
+	color: $text;
+	padding: 20px 100px;
+	position: absolute;
+	bottom: 0;
+}
+
+.f-content
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }

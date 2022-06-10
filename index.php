@@ -30,4 +30,22 @@
 			</form>
 		</div>
 	</body>
+	<footer class="footer container-fluid">
+		<div class="f-content">
+			<div>
+				&copy; 2022 Cheyenne. All Rights Reserved
+			</div>
+			<div style="width: 25%;" class="d-flex justify-content-around">
+				<div>
+					Donate 
+				</div>
+				<div>
+					Privacy Policy 
+				</div>
+				<div>
+					Terms of Service 
+				</div>
+			</div> 
+		</div>
+	</footer>
 </html>
