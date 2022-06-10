@@ -62,23 +62,49 @@ $stmt->close();
             <h2 style="padding-bottom: 0px;">Manage</h2>
             <h3>Upload Image</h3>
 			<div class="uploadImg_form">
-                <form id="help-form" data-parsley-validate="" class="form" action="" method="post">
-                    <label for="image">Image</label>
-                    <input type="text" class="form-control" name="image" required="" data-parsley-maxlength="255">
-
-                    <label for="title">Title</label>
-                    <input type="text" class="form-control" name="title" required="" data-parsley-maxlength="50">
-
-                    <label for="filter">Filter</label>
-                    <input type="text" class="form-control" name="filter" required="" data-parsley-maxlength="25">
-
-                    <label for="date">Date</label>
-                    <input type="date" class="form-control" name="date">
-
-                    <p>
-                    <label for="description">Description</label>
-                    <textarea id="message" class="form-control" name="description" data-parsley-trigger="keyup" data-parsley-validation-threshold="15" data-parsley-maxlength="255"></textarea>
-                    </p>
+                <form id="help-form" data-parsley-validate="" class="form container" action="" method="post">
+                    <div class="row">
+                        <div class="col-3">
+                            <label for="image">Image</label>
+                        </div>
+                        <div class="col-9">
+                            <input type="text" class="form-colums" name="image" required="" data-parsley-maxlength="255" placeholder="Image URL">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <label for="title">Title</label>
+                        </div>
+                        <div class="col-9">
+                            <input type="text" class="form-colums" name="title" required="" data-parsley-maxlength="50" placeholder="Image Title">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <label for="filter">Filter</label>
+                        </div>
+                        <div class="col-9">
+                            <input type="text" class="form-colums" name="filter" required="" data-parsley-maxlength="25" placeholder="Filter Class">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <label for="date">Date</label>
+                        </div>
+                        <div class="col-9">
+                            <input type="date" class="form-colums" name="date" required="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <p>
+                            <label for="description">Description</label>
+                        </div>
+                        <div class="col-9">
+                            <textarea id="message" class="form-colums" name="description" data-parsley-trigger="keyup" data-parsley-validation-threshold="15" data-parsley-maxlength="255" placeholder="Image Description"></textarea>
+                            </p>
+                        </div>
+                    </div>
                     <input type="submit" class="submit-btn" value="Upload" name="uploadbtn">
                 </form>
             </div>

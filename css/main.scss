@@ -155,7 +155,7 @@ h1
 
 .manage_select div
 {
-	margin: 40px 25% 0;
+	margin: 40px 0 0;
 }
 
 .manage_select #manageGo
@@ -167,6 +167,37 @@ h1
 	padding: 10px;
 	text-align: center;
 }
+	/*Upload*/
+	.uploadImg_form
+	{
+		width: 75%;
+		margin: 0 auto;
+	}
+
+	.uploadImg_form input, .uploadImg_form textarea
+	{
+		background-color: $text;
+		border: 2px solid $maincolor;
+		border-radius: 0;
+		outline: 0;
+	}
+	.uploadImg_form .form-colums
+	{
+		width: 100%;
+		margin-bottom: 20px;
+		padding: 5px 15px;
+		color: $maincolor;
+		background-color: $text;	
+	}
+
+	.uploadImg_form .submit-btn
+	{
+		width:100%;
+		background-color: $accentcolor;
+		color: $text;
+		border: 0 solid;
+		padding: 10px;
+	}
 
 /*help*/
 .form-help

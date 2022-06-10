@@ -62,7 +62,24 @@ $stmt->close();
 			<h2 style="padding-bottom: 0px;">Manage</h2>
             <h3>Delete Image</h3>
 			<div>
-
+				<?php
+					$sql="SELECT * FROM dummy_website ORDER BY id DESC";
+					$result=$conn->query($sql);
+					while($row=$result->fetch_assoc())
+					{
+				?>
+						<div class="col-md-2" style="margin-bottom: 2rem;">
+							<div class="card-deck">
+								<div class="card card-sizing">
+									<div class="card-sizing">
+										<img src="<?= $row['image']; ?>" class="card-img-top img-sizing">
+									</div>
+								</div>
+							</div>
+						</div>
+				<?php
+					}
+				?>
             </div>
 		</div>
 	</body>

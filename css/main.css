@@ -156,7 +156,7 @@ h1 {
 }
 
 .manage_select div {
-  margin: 40px 25% 0;
+  margin: 40px 0 0;
 }
 
 .manage_select #manageGo {
@@ -166,6 +166,35 @@ h1 {
   border: 0 solid;
   padding: 10px;
   text-align: center;
+}
+
+/*Upload*/
+.uploadImg_form {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.uploadImg_form input, .uploadImg_form textarea {
+  background-color: #f6f7f8;
+  border: 2px solid #2a3d45;
+  border-radius: 0;
+  outline: 0;
+}
+
+.uploadImg_form .form-colums {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 5px 15px;
+  color: #2a3d45;
+  background-color: #f6f7f8;
+}
+
+.uploadImg_form .submit-btn {
+  width: 100%;
+  background-color: #3a7ca5;
+  color: #f6f7f8;
+  border: 0 solid;
+  padding: 10px;
 }
 
 /*help*/
