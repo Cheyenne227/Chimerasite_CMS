@@ -33,5 +33,8 @@
 				<input type="submit" value="Register">
 			</form>
 		</div>
+		<div class="pageDoll d-flex">
+			<img src="css/images/pageDoll.png" class="pageDoll">
+		</div>
 	</body>
 </html>

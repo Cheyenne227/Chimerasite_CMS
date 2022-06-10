@@ -9,7 +9,24 @@
 	margin:0;
 	padding:0;
 }
-body {
+
+html 
+{
+	height: 100%;
+	box-sizing: border-box;
+}
+  
+*, *:before, *:after 
+{
+	box-sizing: inherit;
+}
+
+body 
+{
+	position: relative;
+	margin: 0;
+	padding-bottom: 6rem;
+	min-height: 100%;
 	background-color: $text;
 }
 
@@ -104,12 +121,13 @@ h1
 	border-bottom: 2px solid $text;
 }
 
-.content {
+.content 
+{
 	width: 1000px;
-	margin: 0 auto;
-	
+	margin: 0 auto;	
 }
-.content h2 {
+.content h2 
+{
 	margin: 0;
 	padding: 75px 0 25px 0;
 	font-size: 50px;
@@ -118,13 +136,25 @@ h1
 	color: $maincolor;
 }
 
-.content h3 {
+.content h3 
+{
 	margin: 0;
 	padding: 0 0 25px 0;
 	font-size: 25px;
 	font-weight: bold;
 	text-align: center;
 	color: $maincolor;
+}
+
+.pageDoll
+{
+	align-items: right;
+	justify-content: flex-end;
+	position: absolute;
+	bottom: 100px;
+	position: absolute;
+	right: 0;
+	bottom: 35px;
 }
 
 /*manage*/
@@ -169,20 +199,20 @@ h1
 	text-align: center;
 }
 	/*Upload*/
-	.uploadImg_form
+	.column_form
 	{
 		width: 75%;
 		margin: 0 auto;
 	}
 
-	.uploadImg_form input, .uploadImg_form textarea
+	.column_form input, .column_form textarea
 	{
 		background-color: $text;
 		border: 2px solid $maincolor;
 		border-radius: 0;
 		outline: 0;
 	}
-	.uploadImg_form .form-colums
+	.column_form .form-colums
 	{
 		width: 100%;
 		margin-bottom: 20px;
@@ -191,13 +221,19 @@ h1
 		background-color: $text;	
 	}
 
-	.uploadImg_form .submit-btn
+	.column_form .submit-btn
 	{
 		width:100%;
 		background-color: $accentcolor;
 		color: $text;
 		border: 0 solid;
 		padding: 10px;
+	}
+
+	.StatusReport
+	{
+		width: 50%;
+		margin: 0 auto;
 	}
 
 /*help*/
@@ -240,7 +276,9 @@ h1
 	color: $text;
 	padding: 20px 100px;
 	position: absolute;
+	right: 0;
 	bottom: 0;
+	left: 0;
 }
 
 .f-content

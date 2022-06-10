@@ -75,6 +75,9 @@ $stmt->close();
 				</div>					
             </div>
 		</div>
+		<div class="pageDoll d-flex">
+			<img src="css/images/pageDoll.png" class="pageDoll">
+		</div>
 	</body>
 	<script src="js/manage.js"></script>
 	<footer class="footer container-fluid">

@@ -61,22 +61,56 @@ $stmt->close();
 		<div class="content">
 			<h2>Profile</h2>
 			<div>
-				<p>Your account details are below:</p>
-				<table>
-					<tr>
-						<td>Username:</td>
-						<td><?=$_SESSION['name']?></td>
-					</tr>
-					<tr>
-						<td>Password:</td>
-						<td><?=$password?></td>
-					</tr>
-					<tr>
-						<td>Email:</td>
-						<td><?=$email?></td>
-					</tr>
-				</table>
+				<div class="column_form">
+					<form id="help-form" data-parsley-validate="" class="form container" action="" method="post">
+						<div class="row">
+							<div class="col-3">
+								<label>Username</label>
+							</div>
+							<div class="col-9">
+								<input type="text" class="form-colums" value="<?=$_SESSION['name']?>">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-3">
+								<label>Email</label>
+							</div>
+							<div class="col-9">
+								<input type="text" class="form-colums" value="<?=$email?>">
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<div class="col-3">
+								<label for="Current_pass">Current Password</label>
+							</div>
+							<div class="col-9">
+								<input type="password" class="form-colums" name="filter" required="">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-3">
+								<label for="New_pass">New Password</label>
+							</div>
+							<div class="col-9">
+								<input type="password" class="form-colums" name="New_pass" required="">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-3">
+								<label for="Repeat_pass">Repeat Password</label>
+							</div>
+							<div class="col-9">
+								<input type="password" class="form-colums" name="Repeat_pass" required="">
+							</div>
+						</div>
+						<input type="submit" class="submit-btn" value="Change Password" name="changePass">
+					</form>
+				</div>
 			</div>
+		</div>
+		<div class="pageDoll d-flex">
+			<img src="css/images/pageDoll.png" class="pageDoll">
 		</div>
 	</body>
 	<footer class="footer container-fluid">

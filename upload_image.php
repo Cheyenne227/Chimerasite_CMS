@@ -61,8 +61,8 @@ $stmt->close();
 		<div class="content">
             <h2 style="padding-bottom: 0px;">Manage</h2>
             <h3>Upload Image</h3>
-			<div class="uploadImg_form">
-                <form id="help-form" data-parsley-validate="" class="form container" action="" method="post">
+			<div class="column_form">
+                <form id="upload-form" data-parsley-validate="" class="form container" action="" method="post">
                     <div class="row">
                         <div class="col-3">
                             <label for="image">Image</label>
@@ -128,6 +128,9 @@ $stmt->close();
                     }        
                 ?> 
             </div>
+		</div>
+        <div class="pageDoll d-flex">
+			<img src="css/images/pageDoll.png" class="pageDoll">
 		</div>
 	</body>
 	<script src="js/manage.js"></script>

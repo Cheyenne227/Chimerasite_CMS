@@ -48,6 +48,9 @@ if (!isset($_SESSION['loggedin'])) {
 				<p>Welcome back, <?=$_SESSION['name']?>!</p>
 			</div>
 		</div>
+		<div class="pageDoll d-flex">
+			<img src="css/images/pageDoll.png" class="pageDoll">
+		</div>
 	</body>
 	<footer class="footer container-fluid">
 		<div class="f-content">

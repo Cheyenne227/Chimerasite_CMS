@@ -92,6 +92,9 @@ $stmt->close();
                 </form>
 			</div>
 		</div>
+		<div class="pageDoll d-flex">
+			<img src="css/images/pageDoll.png" class="pageDoll">
+		</div>
 	</body>
 	<footer class="footer container-fluid">
 		<div class="f-content">
