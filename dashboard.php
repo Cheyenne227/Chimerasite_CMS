@@ -46,6 +46,32 @@ if (!isset($_SESSION['loggedin'])) {
 			<h2>Dashboard</h2>
 			<div>
 				<p>Welcome back, <?=$_SESSION['name']?>!</p>
+				<div id="calender">
+					<div class="calendar">
+						<div class="calendar-header">
+							<span class="month-picker" id="month-picker">February</span>
+							&nbsp;
+							<div class="year-picker">
+								<span id="year">2021</span>
+							</div>
+						</div>
+						<div class="calendar-body">
+							<div class="calendar-week-day">
+								<div>Sun</div>
+								<div>Mon</div>
+								<div>Tue</div>
+								<div>Wed</div>
+								<div>Thu</div>
+								<div>Fri</div>
+								<div>Sat</div>
+							</div>
+							<div class="calendar-days"></div>
+						</div>
+						<div class="month-list"></div>
+					</div>
+
+					<script src="js/callender.js"></script>
+				</div>
 			</div>
 		</div>
 		<div class="pageDoll d-flex">
