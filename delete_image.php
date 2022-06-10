@@ -61,7 +61,7 @@ $stmt->close();
 		<div class="content">
 			<h2 style="padding-bottom: 0px;">Manage</h2>
             <h3>Delete Image</h3>
-			<div>
+			<div class="manage_delete">
 				<div class="container-fluid">
 					<!-- load all images in the database and order them from newest to oldest -->
 					<div>

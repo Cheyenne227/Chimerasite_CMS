@@ -255,7 +255,7 @@ h1 {
 
 /*manage*/
 .manage_select {
-  width: 50%;
+  width: 30%;
   margin: 0 auto;
 }
 
@@ -292,7 +292,7 @@ h1 {
 
 /*Upload*/
 .column_form {
-  width: 75%;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -324,9 +324,15 @@ h1 {
   margin: 0 auto;
 }
 
+/*delete*/
+.manage_delete {
+  width: 50%;
+  margin: 0 auto;
+}
+
 /*help*/
 .form-help {
-  width: 75%;
+  width: 50%;
   margin: 0 auto;
 }
 
