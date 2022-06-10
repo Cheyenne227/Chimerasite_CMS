@@ -61,7 +61,7 @@ $stmt->close();
 		<!-- main content -->
 		<div class="content container-fluid">
 			<h2>Dashboard</h2>
-			<div class="container d-flex justify-content-around">
+			<div class="container d-flex justify-content-evenly">
 				<div id="calender">
 					<div class="calendar">
 						<div class="calendar-header">
@@ -97,7 +97,7 @@ $stmt->close();
 							{
 						?>
 								<div>
-									<img src="<?= $row['image']; ?>">	
+									<img src="<?= $row['image']; ?>" style="width: 100%;">	
 								</div>
 						<?php
 							}
