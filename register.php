@@ -16,7 +16,7 @@
 			<h1>Welcome to Stargazer</h1>
 		</div>
 		<div class="log-reg">
-			<form action="register.php" method="post" autocomplete="off">
+			<form action="registerCon.php" method="post" autocomplete="off">
 				<label for="username">
 					<i class="fas fa-user"></i>
 				</label>

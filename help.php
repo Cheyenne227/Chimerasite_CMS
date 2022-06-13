@@ -76,7 +76,7 @@ $stmt->close();
 		<!-- main content -->
 		<div class="content">
 			<h2>Help</h2>
-			<div class="form-help">
+			<!--<div class="form-help">
                 <form id="help-form" data-parsley-validate="" class="form" action="" method="post">
                     <label for="name">Name:</label>
                     <input type="text" class="form-control" name="name" required="">
@@ -90,7 +90,36 @@ $stmt->close();
                     </p>
                     <input type="submit" class="submit-btn" value="Send">
                 </form>
-			</div>
+			</div>-->
+			<div class="column_form">
+                <form id="upload-form" data-parsley-validate="" class="form container" action="" method="post">
+                    <div class="row">
+                        <div class="col-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col-9">
+                            <input type="text" class="form-colums" name="name" required="" data-parsley-maxlength="255" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col-9">
+                            <input type="email" class="form-colums" name="email" required="" data-parsley-maxlength="50" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <label for="message">Message</label>
+                        </div>
+                        <div class="col-9">
+						<textarea id="message" class="form-control" name="message" data-parsley-trigger="keyup" data-parsley-validation-threshold="15" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" class="submit-btn" value="Send" style="margin-top: 25px;">
+                </form>
+            </div>
 		</div>
 		<div class="pageDoll d-flex">
 			<img src="css/images/pageDoll.png" class="pageDoll">
